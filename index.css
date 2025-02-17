@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  border-right: 1px solid var(--border-light);
+  border: 1px solid var(--border-light);
 }
 
 .slidebar .topSection {
@@ -361,7 +361,7 @@ header .bottomMenu li {
 }
 .employeeContainer .userCard .userDetl .imgContain {
   border-radius: 50%;
-  overflow: hidden ;
+  overflow: hidden;
   height: 24px;
   width: 24px;
   display: flex;
