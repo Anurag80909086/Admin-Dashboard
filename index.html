@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="main-body">
+      <nav class="slidebar">
+        <div class="topSection">
+          <div class="logoContainer">
+            <img src="./images/image.png" alt="Company Logo" />
+          </div>
+
+          <div class="main-nav">
+            <ul>
+              <li>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span>Dashboard</span>
+              </li>
+
+              <span class="nav_heading">People</span>
+
+              <li class="activeNav">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Employee</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-user-group"></i>
+                <span>Team</span>
+              </li>
+
+              <span class="nav_heading">Management</span>
+
+              <li>
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Attendance</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <span>Leaves</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Expense</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box"></i>
+                <span>Assets</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>Reports</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <span>Super Coins</span>
+              </li>
+
+              <span class="nav_heading">Payroll</span>
+
+              <li>
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Dashboard</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-scissors"></i>
+                <span>EPF,ESI & TDS</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-clipboard-list"></i>
+                <span>Generate Salary Slip</span>
+              </li>
+
+              <span class="nav_heading">Company</span>
+
+              <li>
+                <i class="fa-solid fa-building"></i>
+                <span>Company Setting</span>
+              </li>
+
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <span>Attendance Setting</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Leave Settings</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-money-bill-1"></i>
+                <span>Salary Setting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottomSection">
+          <div class="premiumContainer">
+            <div class="preLeft">
+              <p class="pHead">
+                Premium <i class="fa-solid fa-crown premiumIcon"></i>
+              </p>
+              <p>Valid up to 12 months</p>
+            </div>
+            <div class="preRight flex">Modify</div>
+          </div>
+
+          <div class="accountContainer">
+            <span class="flex">H</span>
+
+            <div>
+              <p class="userName">Hajiri</p>
+              <p class="userEmail">hajiri0852@gmail.com</p>
+            </div>
+
+            <div class="rightArrow flex">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="main_container">
+        <header>
+          <div class="topBar">
+            <div class="leftSec">
+              <h2>Expense Management</h2>
+              <p>Manage Employee Expense Reimbursements</p>
+            </div>
+            <div class="rightSec flex">
+              <p><i class="fa-solid fa-inbox"></i>&nbsp; My Inbox</p>
+              <span class="flex">M</span>
+            </div>
+          </div>
+          <ul class="bottomMenu">
+            <li class="liActive">Dashboard</li>
+            <li>Expense Request</li>
+            <li>Company Expense Policy</li>
+            <li>Company Wallet</li>
+          </ul>
+        </header>
+
+        <div class="mainSection">
+          <div class="leftArea">
+            <div class="dateContainer">
+              <span>Date Range</span>
+
+              <div class="dateWrapper">
+                <i class="fa-solid fa-arrow-left"></i>
+                Janurary, 2025<i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="walletContainer">
+              <p class="walletHeading">Wallet Details</p>
+              <div class="walletCard">
+                <div class="topBar">
+                  <p class="title">Company Wallet</p>
+
+                  <div>
+                    <p class="subTitle">Your Balance</p>
+                    <p class="mainAmount">₹16,05,894</p>
+                  </div>
+                </div>
+                <div class="bottomBar">
+                  <span class="title">Spending Limit</span>
+                  <span class="amount">₹10,05,894</span>
+                </div>
+              </div>
+
+              <div class="employeeContainer">
+                <p class="title">Employee Wallet Transactions</p>
+                <div class="allUsers">
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/1img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>Saes Department</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹10,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/2img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>Saes Department</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹10,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/3img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>It Department</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹9,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/4img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>Relation Manager</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹8,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/5img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>Software Develop</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹12,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+
+                  <div class="userCard">
+                    <div class="userDetl">
+                      <div class="imgContain">
+
+                        <img
+                          src="./images/6img.jpeg"
+                          alt="useImage"
+                        />
+                      </div>
+                      <div class="nameContainer">
+                        <p class="userName">Eleanor Pena</p>
+                        <div class="userDept flex">
+                          Department: &nbsp;
+                          <p>Software Develop</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="amountSec">
+                      <p class="amount">₹27,894</p>
+                      <p class="date">Jan,23</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="allTransition">
+                See all Transition
+              </button>
+            </div>
+          </div>
+
+          <div class="rightArea">
+            <div class="rightTop">
+              <div class="settleCard">
+                <div class="title">
+                  <i class="fa-solid fa-box-archive"></i>Settled Expense
+                </div>
+                <p class="amount">₹1,24,420</p>
+                <p class="growth greenColor">
+                  <i class="fa-solid fa-arrow-trend-up"></i> 1.3%
+                  <span>Up from week</span>
+                </p>
+              </div>
+
+              <div class="settleCard">
+                <div class="title">
+                  <i class="fa-solid fa-box-archive"></i>Un-Settled Expense
+                </div>
+                <p class="amount">₹80,240</p>
+                <p class="growth redColor">
+                  <i class="fa-solid fa-arrow-trend-down"></i> 4.3%
+                  <span>Up from week</span>
+                </p>
+              </div>
+
+              <div class="settleCard">
+                <div class="title">
+                  <i class="fa-solid fa-box-archive"></i>In Process
+                </div>
+                <p class="amount">₹34,240</p>
+                <p class="growth">
+                  <span>12 Request in this week</span>
+                </p>
+              </div>
+
+              <div class="settleCard">
+                <div class="title">
+                  <i class="fa-solid fa-box-archive"></i>Rejected Expense
+                </div>
+                <p class="amount">₹1,240</p>
+                <p class="growth">
+                  <span>12 Request in this week</span>
+                </p>
+              </div>
+
+              <div class="settleCard">
+                <div class="title">
+                  <i class="fa-solid fa-box-archive"></i>Client Expense
+                </div>
+                <p class="amount">₹14,240</p>
+                <p class="growth greenColor">
+                  <i class="fa-solid fa-arrow-trend-up"></i> 1.3%
+                  <span>Up from week</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="rightMid">
+              <div class="rightML">
+                <div class="header">
+                  <span>Categories</span>
+                  <p>Week 1 &nbsp; <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="innerBody">
+                  <div class="scoreSection flex">
+                    <div class="leftCount">
+                      <div>
+                        10
+                        <p class="title">Types of Expense</p>
+                      </div>
+                      <p class="lowTitle">Defined By Your organisation</p>
+                    </div>
+                    <img src="./images/colorScore.png" alt="" />
+                  </div>
+
+                  <div class="amountContainer">
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lRed smallDot"></span>
+                        <p>Travel & Transportation <span>(20%)</span></p>
+                      </div>
+                      <div class="amount">₹80,240</div>
+                    </div>
+
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="ldarkBlue smallDot"></span>
+                        <p>Employee Reimbursements <span>(18%)</span></p>
+                      </div>
+                      <div class="amount">₹23,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lliteblue smallDot"></span>
+                        <p>Office & Administration <span>(11%)</span></p>
+                      </div>
+                      <div class="amount">₹13,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="ldarkGreen smallDot"></span>
+                        <p>
+                          Client Engagement & Entertainment <span>(9%)</span>
+                        </p>
+                      </div>
+                      <div class="amount">₹11,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lliteGreen smallDot"></span>
+                        <p>Training & Development <span>(8%)</span></p>
+                      </div>
+                      <div class="amount">₹10,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lmoreDarkGrn smallDot"></span>
+                        <p>Professional Fees <span>(10%)</span></p>
+                      </div>
+                      <div class="amount">₹20,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lorange smallDot"></span>
+                        <p>It & Software <span>(10%)</span></p>
+                      </div>
+                      <div class="amount">₹40,240</div>
+                    </div>
+                    <div class="amountCard flex">
+                      <div class="amountLeft flex">
+                        <span class="lpurple smallDot"></span>
+                        <p>Miscellaneous Expenses <span>(6%)</span></p>
+                      </div>
+                      <div class="amount">₹50,240</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rightMR">
+                <div class="header">
+                  <span>Client Report</span>
+                  <p>Week 1 &nbsp; <i class="fa-solid fa-caret-down"></i></p>
+                </div>
+                <div class="innerBody">
+                  <div class="detailsCard">
+                    <div class="upperDiv">
+                      <div class="leftSide flex">
+                        <div class="imgContainer">
+                          <img
+                            src="./images/first.jpeg
+                          "
+                            alt="logo"
+                          />
+                        </div>
+                        <div class="txtCont">
+                          <span>Wekrata</span>
+                          <div class="progressCont flex">
+                            <div class="bar"></div>
+                            <span>50%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rightSide">
+                        <p class="amount">₹54,240</p>
+                        <p class="title">This week</p>
+                      </div>
+                    </div>
+                    <div class="lowerDiv">
+                      <p>total money spend till now <span>₹54,240</span></p>
+                      <p class="smTitle">
+                        View The Details &nbsp;
+                        <i class="fa-solid fa-caret-down"></i>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="detailsCard">
+                    <div class="upperDiv">
+                      <div class="leftSide flex">
+                        <div class="imgContainer">
+                          <img
+                            src="./images/second.jpeg
+                          "
+                            alt="logo"
+                          />
+                        </div>
+                        <div class="txtCont">
+                          <span>Wekrata</span>
+                          <div class="progressCont flex">
+                            <div class="bar second"></div>
+                            <span>60%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rightSide">
+                        <p class="amount">₹84,240</p>
+                        <p class="title">This week</p>
+                      </div>
+                    </div>
+                    <div class="lowerDiv">
+                      <p>total money spend till now <span>₹54,240</span></p>
+                      <p class="smTitle">
+                        View The Details &nbsp;
+                        <i class="fa-solid fa-caret-down"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detailsCard">
+                    <div class="upperDiv">
+                      <div class="leftSide flex">
+                        <div class="imgContainer">
+                          <img
+                            src="./images/third.jpeg
+                          "
+                            alt="logo"
+                          />
+                        </div>
+                        <div class="txtCont">
+                          <span>Wekrata</span>
+                          <div class="progressCont flex">
+                            <div class="bar third"></div>
+                            <span>30%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rightSide">
+                        <p class="amount">₹94,240</p>
+                        <p class="title">This week</p>
+                      </div>
+                    </div>
+                    <div class="lowerDiv">
+                      <p>total money spend till now <span>₹54,240</span></p>
+                      <p class="smTitle">
+                        View The Details &nbsp;
+                        <i class="fa-solid fa-caret-down"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detailsCard">
+                    <div class="upperDiv">
+                      <div class="leftSide flex">
+                        <div class="imgContainer">
+                          <img
+                            src="./images/fourth.jpeg
+                          "
+                            alt="logo"
+                          />
+                        </div>
+                        <div class="txtCont">
+                          <span>Wekrata</span>
+                          <div class="progressCont flex">
+                            <div class="bar fourth"></div>
+                            <span>90%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rightSide">
+                        <p class="amount">₹2,14,240</p>
+                        <p class="title">This week</p>
+                      </div>
+                    </div>
+                    <div class="lowerDiv">
+                      <p>total money spend till now <span>₹54,240</span></p>
+                      <p class="smTitle">
+                        View The Details &nbsp;
+                        <i class="fa-solid fa-caret-down"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rightBottom">
+              <div class="heading">Departmental Budget Allocation</div>
+              <div class="allSmallCards">
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹40,240</p>
+                  <p class="quote">Sales & Marketing</p>
+                </div>
+
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹80,240</p>
+                  <p class="quote">Operations & Support</p>
+                </div>
+
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹20,240</p>
+                  <p class="quote">HR & Administration</p>
+                </div>
+
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹1,23,240</p>
+                  <p class="quote">Finance & Legal</p>
+                </div>
+
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹20,240</p>
+                  <p class="quote">It & Engineering</p>
+                </div>
+
+                <div class="smallCard borderLightRight">
+                  <p class="amount">₹20,240</p>
+                  <p class="quote">Product Development</p>
+                </div>
+
+                <div class="smallCard">
+                  <p class="amount">₹20,240</p>
+                  <p class="quote">Creative & Strategy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

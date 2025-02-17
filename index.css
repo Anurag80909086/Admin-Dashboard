@@ -1,0 +1,773 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", serif;
+}
+:root {
+  --light_purple: rgb(250, 240, 250);
+  --border-light: rgb(240, 236, 236);
+}
+
+.main-body {
+  display: flex;
+  height: 100vh;
+}
+
+.main_container {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----> this is navbar css <----- */
+
+.slidebar {
+  width: 13%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border-light);
+}
+
+.slidebar .topSection {
+  padding: 3px 10px;
+}
+
+.logoContainer {
+  width: 95px;
+  padding: 0px 4px;
+}
+.slidebar img {
+  height: 100%;
+}
+
+.main-nav {
+  margin-top: 9px;
+}
+
+.main-nav ul li {
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(66, 66, 66);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 6px;
+  &:hover {
+    background-color: rgb(245, 240, 245);
+    color: rgb(184, 142, 184);
+  }
+}
+
+.main-nav ul .nav_heading {
+  text-transform: uppercase;
+  font-size: 8px;
+  color: rgb(121, 121, 121);
+  padding: 0 9px;
+}
+.activeNav {
+  background-color: var(--light_purple);
+  color: rgb(184, 142, 184);
+}
+
+.bottomSection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomSection .premiumContainer {
+  padding: 5px 15px;
+  background-color: rgb(245, 239, 245);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light);
+}
+.bottomSection .preLeft .pHead {
+  font-size: 11px;
+  color: rgb(39, 39, 39);
+}
+
+.bottomSection .preLeft .premiumIcon {
+  color: rgb(238, 169, 40);
+  padding: 3px;
+  background-color: rgb(243, 243, 107);
+  border-radius: 50%;
+  font-size: 9px;
+}
+.bottomSection .preLeft p {
+  font-size: 8px;
+  color: rgb(121, 121, 121);
+}
+
+.bottomSection .preRight {
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.accountContainer {
+  padding: 5px 6px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.accountContainer span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 400;
+  background-color: rgb(177, 150, 177);
+  flex-shrink: 0;
+}
+
+.accountContainer .userName {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
+}
+.accountContainer .userEmail {
+  font-size: 8px;
+  color: rgb(121, 121, 121);
+}
+
+.accountContainer .rightArrow {
+  color: rgb(177, 150, 177);
+  font-size: 11px;
+  margin-left: 18px;
+}
+
+/* -----> This is Header css <----- */
+
+header {
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
+}
+
+header .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+header .topBar .leftSec h2 {
+  font-size: 15px;
+  color: rgb(20, 20, 20);
+  line-height: 17px;
+}
+header .topBar .leftSec p {
+  font-size: 9px;
+  color: rgb(163, 163, 163);
+}
+
+header .topBar .rightSec {
+  gap: 9px;
+}
+header .topBar .rightSec p {
+  font-size: 11px;
+  color: rgb(95, 92, 92);
+  cursor: pointer;
+}
+header .topBar .rightSec span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  font-size: 12px;
+  color: white;
+}
+
+header .bottomMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+header .bottomMenu li {
+  font-size: 11px;
+  color: rgb(107, 107, 107);
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.liActive {
+  color: #6666f2 !important;
+  border-bottom: 1px solid #6666f2;
+}
+
+/* -----> This is Main Section css <----- */
+.mainSection {
+  height: 88%;
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainSection .leftArea {
+  height: 100%;
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.mainSection .leftArea .dateContainer {
+  background-color: #f9fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
+  border: 1px solid var(--border-light);
+  border-radius: 1px;
+}
+.mainSection .leftArea .dateContainer span {
+  color: rgb(95, 95, 95);
+  font-size: 12px;
+}
+.mainSection .leftArea .dateContainer .dateWrapper {
+  background-color: white;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  padding: 4px 10px;
+}
+
+.mainSection .leftArea .dateContainer .dateWrapper .fa-arrow-left {
+  border-right: 1px solid var(--border-light);
+  padding: 2px 0;
+  padding-right: 7px;
+}
+.mainSection .leftArea .dateContainer .dateWrapper .fa-arrow-right {
+  border-left: 1px solid var(--border-light);
+  padding: 2px 0;
+  padding-left: 7px;
+}
+
+.mainSection .leftArea .walletContainer {
+  border: 1px solid var(--border-light);
+  border-radius: 1px;
+  padding: 10px 5px;
+}
+.mainSection .leftArea .walletContainer {
+  border: 1px solid var(--border-light);
+  border-radius: 1px;
+  padding: 9px 8px;
+  border-radius: 1px;
+}
+.walletContainer .walletHeading {
+  font-size: 10px;
+  color: rgb(58, 58, 58);
+  font-weight: 500;
+}
+
+.walletContainer .walletCard {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 12px 0;
+  margin-bottom: 13px;
+}
+.walletContainer .topBar {
+  background-color: #f9f6f9;
+  padding: 9px 9px;
+}
+.walletContainer .topBar .title {
+  font-size: 10px;
+  color: rgb(87, 87, 87);
+}
+.walletCard .topBar div {
+  margin: 7px 0;
+  margin-top: 10px;
+}
+.walletContainer .topBar .subTitle {
+  font-size: 9px;
+  color: rgb(138, 138, 138);
+}
+.walletContainer .topBar .mainAmount {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgb(29, 29, 29);
+}
+.walletContainer .bottomBar {
+  background-color: #dee0ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 6px;
+}
+.walletContainer .bottomBar .title {
+  font-size: 10px;
+  color: rgb(36, 36, 36);
+}
+.walletContainer .bottomBar .amount {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.employeeContainer {
+  border-top: 1px solid var(--border-light);
+  padding-top: 12px;
+}
+.employeeContainer .allUsers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 8px;
+}
+.employeeContainer .title {
+  font-size: 9px;
+  color: rgb(155, 155, 155);
+}
+
+.employeeContainer .userCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employeeContainer .userCard .userDetl {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.employeeContainer .userCard .userDetl .imgContain {
+  border-radius: 50%;
+  overflow: hidden ;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.employeeContainer .userCard .userDetl img {
+  height: 100%;
+  width: 100%;
+}
+.employeeContainer .userCard .userDetl .userName {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+.employeeContainer .userCard .userDetl .userDept {
+  font-size: 9px;
+  color: rgb(131, 131, 131);
+}
+.employeeContainer .userCard .userDetl .userDept p {
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+.employeeContainer .userCard .amountSec .amount {
+  font-weight: 500;
+  color: rgb(19, 19, 19);
+  font-size: 10px;
+  text-align: right;
+}
+.employeeContainer .userCard .amountSec .date {
+  color: rgb(99, 99, 99);
+  font-size: 9px;
+  text-align: right;
+}
+
+.walletContainer button {
+  border: 1px solid var(--border-light);
+  width: 100%;
+  padding: 5px;
+  font-size: 10px;
+  color: #777777;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  border-radius: 1px;
+}
+
+/* -----> This is Right Top Area css <----- */
+
+.mainSection .rightArea {
+  height: 100%;
+  width: 825px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.rightArea .rightTop {
+  display: flex;
+  gap: 9px;
+}
+
+.rightArea .rightTop .settleCard {
+  border: 1px solid var(--border-light);
+  border-radius: 1px;
+  padding: 5px 9px;
+  width: 100%;
+}
+.rightArea .rightTop .settleCard .title {
+  font-size: 9px;
+  color: #777777;
+}
+.rightArea .rightTop .settleCard .title i {
+  background-color: #f1f1f1;
+  padding: 4px;
+  border-radius: 2px;
+  margin-right: 8px;
+  font-size: 8px;
+}
+
+.rightArea .rightTop .settleCard .amount {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(37, 37, 37);
+  padding: 2px 0;
+}
+.rightArea .rightTop .settleCard .growth {
+  font-size: 8px;
+}
+
+.greenColor {
+  color: #00b69b;
+}
+.redColor {
+  color: #f93c65;
+}
+.rightArea .rightTop .settleCard .growth span {
+  color: rgb(95, 95, 95);
+}
+
+/* -----> This is Right Mid Area css <----- */
+.rightMid {
+  height: 68%;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.rightMid .rightML {
+  border: 1px solid var(--border-light);
+  width: 50%;
+  height: 100%;
+  border-radius: 2px;
+}
+.rightMid .rightML .header {
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px;
+}
+.rightMid .rightML .header span {
+  font-size: 12px;
+  color: rgb(39, 39, 39);
+  font-weight: 500;
+}
+.rightMid .rightML .header p {
+  font-size: 10px;
+  color: rgb(39, 39, 39);
+}
+.rightMid .rightML .header p i {
+  font-size: 8px;
+}
+
+.rightML .innerBody {
+  padding: 9px;
+}
+.rightML .innerBody .scoreSection {
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.rightML .innerBody .scoreSection .leftCount div {
+  display: flex;
+  align-items: end;
+  font-size: 19px;
+  color: rgb(31, 31, 31);
+  line-height: 12px;
+  font-weight: 600;
+}
+.scoreSection .leftCount .title {
+  font-size: 11px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+.scoreSection .leftCount .lowTitle {
+  font-size: 10px;
+  color: rgb(136, 135, 135);
+  margin-top: 3px;
+}
+.rightML .innerBody .scoreSection img {
+  height: 45px;
+}
+
+.innerBody .amountContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5.5px;
+  margin-top: 5px;
+}
+.innerBody .amountContainer .amountCard {
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  font-size: 10px;
+  justify-content: space-between;
+  padding: 5px;
+  color: #202020;
+}
+.innerBody .amountContainer .amountCard .amount {
+  font-weight: 500;
+}
+
+.innerBody .amountContainer .amountCard p span {
+  color: #7c7c7c;
+}
+.smallDot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 3px;
+}
+
+.lRed {
+  background-color: #ca365f;
+}
+.ldarkBlue {
+  background-color: #47539f;
+}
+.lliteblue {
+  background-color: #327dd1;
+}
+.ldarkGreen {
+  background-color: #3c887c;
+}
+.lliteGreen {
+  background-color: #5eced8;
+}
+.lmoreDarkGrn {
+  background-color: #4496ac;
+}
+.lorange {
+  background-color: #ee7c6d;
+}
+.lpurple {
+  background-color: #87448d;
+}
+
+.rightMid .rightMR {
+  border: 1px solid var(--border-light);
+  width: 50%;
+  height: 100%;
+  border-radius: 2px;
+}
+.rightMid .rightMR .header {
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px;
+}
+.rightMid .rightMR .header span {
+  font-size: 12px;
+  color: rgb(39, 39, 39);
+  font-weight: 500;
+}
+.rightMid .rightMR .header p {
+  font-size: 10px;
+  color: rgb(39, 39, 39);
+}
+.rightMid .rightMR .header p i {
+  font-size: 8px;
+}
+
+.rightMR .innerBody {
+  padding: 9px;
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+}
+.rightMR .innerBody .detailsCard {
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  padding: 4px 7px;
+}
+.rightMR .innerBody .detailsCard .upperDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.rightMR .innerBody .detailsCard .upperDiv .imgContainer {
+  height: 27px;
+  width: 27px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightMR .innerBody .detailsCard .upperDiv img {
+  height: 100%;
+  width: 100%;
+}
+.rightMR .innerBody .detailsCard .upperDiv .leftSide {
+  font-weight: 500;
+  font-size: 10px;
+  color: rgb(32, 32, 32);
+  justify-content: start;
+  width: 65%;
+}
+.rightMR .innerBody .detailsCard .upperDiv .leftSide .progressCont span {
+  font-size: 9px;
+  color: #181818;
+  text-align: right;
+}
+
+.upperDiv .txtCont {
+  width: 100%;
+  text-align: left;
+}
+.upperDiv .progressCont .bar {
+  width: 100%;
+  background-color: #ededff;
+  height: 4px;
+  margin-right: 5px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #4a4a79;
+    border-radius: 8px;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
+}
+.upperDiv .progressCont .second {
+  &::after {
+    width: 60%;
+  }
+}
+.upperDiv .progressCont .third {
+  &::after {
+    width: 30%;
+  }
+}
+.upperDiv .progressCont .fourth {
+  &::after {
+    width: 40%;
+  }
+}
+
+.upperDiv .progressCont {
+  width: 100%;
+}
+.rightMR .innerBody .detailsCard .upperDiv .rightSide {
+  font-size: 9px;
+  color: #747474;
+  text-align: right;
+}
+.rightMR .innerBody .detailsCard .upperDiv .rightSide .amount {
+  font-size: 12px;
+  color: #1d1d1d;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+.rightMR .innerBody .detailsCard .lowerDiv {
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+.rightMR .innerBody .detailsCard .lowerDiv p {
+  font-size: 10px;
+  color: #777777;
+}
+.rightMR .innerBody .detailsCard .lowerDiv p span {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+.rightMR .innerBody .detailsCard .lowerDiv .smTitle {
+  font-size: 10px;
+  color: #202020;
+}
+.rightMR .innerBody .detailsCard .lowerDiv .smTitle i {
+  font-size: 8px;
+}
+
+/* -----> This is Right Bottom Area css <----- */
+
+.rightBottom {
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+}
+
+.rightBottom .heading {
+  font-size: 11px;
+  color: #313131;
+  padding: 7px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.borderLightRight {
+  border-right: 1px solid var(--border-light);
+}
+
+.rightBottom .allSmallCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 7px;
+}
+
+.smallCard {
+  padding: 2px 0;
+  padding-right: 14px;
+}
+.rightBottom .allSmallCards .smallCard .amount {
+  font-weight: 500;
+  font-size: 12px;
+  color: #181818;
+  line-height: 15px;
+}
+.rightBottom .allSmallCards .smallCard .quote {
+  font-size: 9px;
+  color: #474747;
+}
